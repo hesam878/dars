@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت آموزشی عربی هشتم</title>
+    <!-- لینک فونت Vazir -->
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+    <!-- لینک Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* استایل کلی */
+        body {
+            font-family: Vazir, sans-serif;
+            direction: rtl;
+            text-align: center;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        a:hover {
+            color: #2980b9;
+        }
+
+        /* نوار منو */
+        .navbar {
+            background: linear-gradient(90deg, #2c3e50, #34495e);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #3498db;
+        }
+
+        /* بخش‌های اصلی */
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            backdrop-filter: blur(5px);
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .download-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* لیست فصل‌ها */
+        .chapter-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .chapter-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .chapter-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .chapter-item h3 {
+            margin-top: 0;
+        }
+        .p {
+            font-size: 18px;
+            text-align: right;
+            line-height: 1.8;
+        }
+        .h {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* دکمه بازگشت به بالا */
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        #myBtn:hover {
+            background-color: #2980b9;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <!-- نوار منو -->
+    <div class="navbar">
+        <a href="#home">خانه</a>
+        <a href="#study-methods">روش درس خواندن</a>
+        <a href="#chapters">فصل‌های عربی هشتم</a>
+    </div>
+
+    <!-- صفحه اصلی -->
+    <div id="home" class="section">
+        <h1 class="h">به سایت آموزشی عربی هشتم خوش آمدید!</h1>
+        <p class="p">در این سایت، می‌توانید بهترین روش‌های درس خواندن، جزوه‌های خلاصه، کتاب‌های درسی و نمونه سوالات عربی هشتم را پیدا کنید. با ما همراه شوید تا درس خواندن را به یک تجربه لذت‌بخش تبدیل کنید.</p>
+    </div>
+
+  <!-- صفحه روش درس خواندن -->
+<div id="study-methods" class="section">
+    <h2 class="h">راهنمای جامع مطالعه عربی پایه هشتم برای کسب نمره کامل</h2>
+    <p class="p">من یک معلم عربی با تجربه هستم و می‌خواهم به شما کمک کنم تا در درس عربی پایه هشتم به تسلط کامل برسید و نمره کامل بگیرید. برای رسیدن به این هدف، باید یک روش مطالعه منظم و مؤثر را دنبال کنید. در اینجا به طور مفصل به این روش می‌پردازیم:</p>
+
+    <h3 class="h">1. شناخت ساختار کتاب درسی</h3>
+    <p class="p"><strong>فهرست:</strong> ابتدا به فهرست کتاب نگاهی بیندازید و با موضوعات و ترتیب دروس آشنا شوید.</p>
+    <p class="p"><strong>درس‌ها:</strong> هر درس شامل بخش‌های مختلفی است: متن درس، قواعد، تمرین‌ها و واژگان جدید.</p>
+    <p class="p"><strong>اهداف:</strong> در ابتدای هر درس، اهداف یادگیری آن درس ذکر شده است. این اهداف را به دقت بخوانید و در طول مطالعه به آنها توجه داشته باشید.</p>
+
+    <h3 class="h">2. مطالعه‌ی گام به گام هر درس</h3>
+    <h4 class="h">متن درس:</h4>
+    <p class="p">ابتدا متن درس را به دقت بخوانید و سعی کنید معنای آن را حدس بزنید.</p>
+    <p class="p">سپس به سراغ ترجمه متن بروید و آن را با حدس خود مقایسه کنید.</p>
+    <p class="p">در صورت نیاز، از معجم (فرهنگ لغت) برای یافتن معنای کلمات ناآشنا استفاده کنید.</p>
+    <p class="p">متن درس را چندین بار بخوانید تا به طور کامل درک کنید.</p>
+
+    <h4 class="h">قواعد:</h4>
+    <p class="p">قواعد هر درس را به دقت مطالعه کنید و سعی کنید آنها را به خوبی بفهمید.</p>
+    <p class="p">برای درک بهتر قواعد، از مثال‌های کتاب درسی و تمرین‌های آن استفاده کنید.</p>
+    <p class="p">در صورت نیاز، از منابع کمک آموزشی دیگر نیز می‌توانید استفاده کنید.</p>
+
+    <h4 class="h">تمرین‌ها:</h4>
+    <p class="p">پس از مطالعه‌ی قواعد، به سراغ تمرین‌های درس بروید و آنها را حل کنید.</p>
+    <p class="p">سعی کنید تمرین‌ها را بدون کمک گرفتن از دیگران حل کنید.</p>
+    <p class="p">در صورت بروز مشکل، به متن درس و قواعد مراجعه کنید.</p>
+    <p class="p">پاسخ‌های خود را با پاسخ‌های کتاب مقایسه کنید و در صورت وجود اشتباه، آن را اصلاح کنید.</p>
+
+    <h4 class="h">واژگان جدید:</h4>
+    <p class="p">لیستی از واژگان جدید هر درس را تهیه کنید و آنها را به دقت بخوانید.</p>
+    <p class="p">سعی کنید معنای واژگان را در متن درس پیدا کنید.</p>
+    <p class="p">از فلش کارت یا دفترچه یادداشت برای حفظ واژگان استفاده کنید.</p>
+    <p class="p">واژگان جدید را در جملات مختلف به کار ببرید تا به خوبی در ذهن شما تثبیت شوند.</p>
+
+    <h3 class="h">3. مرور و تکرار</h3>
+    <p class="p"><strong>مرور:</strong> مطالب هر درس را به طور منظم مرور کنید.</p>
+    <p class="p"><strong>تکرار:</strong> تمرین‌ها و واژگان را به طور مکرر تکرار کنید.</p>
+    <p class="p"><strong>خلاصه نویسی:</strong> نکات مهم هر درس را به صورت خلاصه در دفترچه یادداشت خود بنویسید.</p>
+    <p class="p"><strong>آزمون:</strong> از خودتان آزمون بگیرید تا میزان یادگیری خود را بسنجید.</p>
+
+    <h3 class="h">4. استفاده از منابع کمک آموزشی</h3>
+    <p class="p"><strong>کتاب‌های کمک آموزشی:</strong> کتاب‌های کمک آموزشی می‌توانند در درک بهتر مطالب و حل تمرین‌ها به شما کمک کنند.</p>
+    <p class="p"><strong>سایت‌ها و نرم‌افزارهای آموزشی:</strong> از سایت‌ها و نرم‌افزارهای آموزشی عربی برای یادگیری بهتر می‌توانید استفاده کنید.</p>
+    <p class="p"><strong>معلم:</strong> در صورت وجود هرگونه مشکل، از معلم خود کمک بگیرید.</p>
+
+    <h3 class="h">نکات مهم</h3>
+    <p class="p"><strong>برنامه‌ریزی:</strong> یک برنامه‌ی منظم برای مطالعه‌ی درس عربی داشته باشید و به آن پایبند باشید.</p>
+    <p class="p"><strong>تمرکز:</strong> در هنگام مطالعه، تمرکز داشته باشید و از عوامل مزاحم دوری کنید.</p>
+    <p class="p"><strong>استمرار:</strong> به طور مستمر و پیوسته مطالعه کنید و از وقفه طولانی پرهیز کنید.</p>
+    <p class="p"><strong>انگیزه:</strong> انگیزه خود را برای یادگیری درس عربی حفظ کنید و به خودتان ایمان داشته باشید.</p>
+
+    <p class="p">با رعایت این نکات و روش مطالعه‌ی گام به گام، مطمئناً می‌توانید در درس عربی پایه هشتم به تسلط کامل برسید و نمره کامل بگیرید.</p>
+</div>
+    <!-- صفحه فصل‌های علوم هفتم -->
+    <div id="chapters" class="section">
+        <h2 class="h">فصل‌های علوم هفتم</h2>
+        <div class="chapter-list">
+            <!-- فصل ۱ -->
+            <div class="chapter-item">
+                <h3 class="h">درس ۱: السلام و التعارف</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه درس ۱ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات درس ۱ (PDF)</a>
+            </div>
+
+            <!-- فصل ۲ -->
+            <div class="chapter-item">
+                <h3 class="h">درس ۲: فی المدرسة</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه درس ۲ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات درس ۲ (PDF)</a>
+            </div>
+
+            <!-- فصل ۳ -->
+            <div class="chapter-item">
+                <h3 class="h">درس ۳: فی البیت</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه درس ۳ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات درس ۳ (PDF)</a>
+            </div>
+
+            <!-- فصل ۴ -->
+            <div class="chapter-item">
+                <h3 class="h">درس ۴: فی الحدیقة</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه درس ۴ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات درس ۴ (PDF)</a>
+            </div>
+
+            <!-- فصل ۵ -->
+            <div class="chapter-item">
+                <h3 class="h">درس ۵: فی السوق</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه درس ۵ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات درس ۵ (PDF)</a>
+            </div>
+
+            <!-- فصل ۶ -->
+            <div class="chapter-item">
+                <h3 class="h">درس ۶: فی المطعم</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه درس ۶ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات درس ۶ (PDF)</a>
+            </div>
+
+            <!-- فصل ۷ -->
+            <div class="chapter-item">
+                <h3 class="h">درس ۶: فی المطعم</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه درس ۷ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات درس ۷ (PDF)</a>
+            </div>
+
+            <!-- فصل ۸ -->
+            <div class="chapter-item">
+                <h3 class="h">درس ۸: فی المطار</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه درس ۸ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات درس ۸ (PDF)</a>
+            </div>
+
+            <!-- فصل ۹ -->
+            <div class="chapter-item">
+                <h3 class="h">درس ۹: فی الفندق</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه درس ۹ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات درس ۹ (PDF)</a>
+            </div>
+
+            <!-- درس ۱۰ -->
+            <div class="lesson-item">
+                <h3>درس ۱۰: فی السفر</h3>
+                <a href="#" class="download-btn">دانلود جزوه درس ۱۰ (PDF)</a>
+                <a href="#" class="download-btn">دانلود نمونه سوالات درس ۱۰ (PDF)</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- دکمه بازگشت به بالا -->
+    <button onclick="topFunction()" id="myBtn" title="بازگشت به بالا">↑</button>
+
+    <script>
+        // اسکریپت دکمه بازگشت به بالا
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

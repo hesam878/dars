@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت آموزشی زبان انگلیسی هشتم</title>
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+    <!-- لینک Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* استایل کلی */
+        body {
+            font-family: Vazir, sans-serif;
+            direction: rtl;
+            text-align: center;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        a:hover {
+            color: #2980b9;
+        }
+
+        /* نوار منو */
+        .navbar {
+            background: linear-gradient(90deg, #2c3e50, #34495e);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #3498db;
+        }
+
+        /* بخش‌های اصلی */
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            backdrop-filter: blur(5px);
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .download-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* لیست فصل‌ها */
+        .chapter-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .chapter-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .chapter-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .chapter-item h3 {
+            margin-top: 0;
+        }
+        .p {
+            font-size: 18px;
+            text-align: right;
+            line-height: 1.8;
+        }
+        .h {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* دکمه بازگشت به بالا */
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        #myBtn:hover {
+            background-color: #2980b9;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <!-- نوار منو -->
+    <div class="navbar">
+        <a href="#home">خانه</a>
+        <a href="#study-methods">روش یادگیری زبان</a>
+        <a href="#lessons">درس‌های زبان انگلیسی هشتم</a>
+    </div>
+    <!-- صفحه اصلی -->
+    <div id="home" class="section">
+        <h1>به سایت آموزشی زبان انگلیسی هشتم خوش آمدید!</h1>
+        <p>در این سایت، می‌توانید بهترین روش‌های یادگیری زبان انگلیسی، جزوه‌های خلاصه، کتاب‌های درسی و نمونه سوالات زبان انگلیسی هشتم را پیدا کنید. با ما همراه شوید تا یادگیری زبان را به یک تجربه لذت‌بخش تبدیل کنید.</p>
+    </div>
+    <!-- صفحه روش درس خواندن -->
+<div id="study-methods" class="section">
+    <h2 class="h">راهنمای جامع یادگیری زبان انگلیسی پایه هفتم برای کسب نمره کامل</h2>
+    <p>سلام دانش آموز عزیز! من اینجا هستم تا به تو کمک کنم زبان انگلیسی پایه هفتم رو به بهترین شکل ممکن یاد بگیری و بتونی نمره کامل بگیری. اصلا نگران نباش، با یه برنامه ریزی دقیق و تلاش مستمر، رسیدن به این هدف کاملا امکان پذیره.</p>
+
+    <h3 class="h">گام اول: برنامه‌ریزی</h3>
+    <p><strong>یه دفترچه بردار و یه برنامه هفتگی برای خودت تنظیم کن.</strong> تو این برنامه، زمان مشخصی رو برای مطالعه زبان انگلیسی در نظر بگیر. این زمان می‌تونه هر روز باشه یا چند روز در هفته، مهم اینه که به طور منظم و پیوسته باشه.</p>
+
+    <h3 class="h">گام دوم: لغات</h3>
+    <p class="p"><strong>حفظ لغات یکی از مهم‌ترین بخش‌های یادگیری هر زبانیه.</strong> برای این کار، از روش‌های مختلفی می‌تونی استفاده کنی:</p>
+    <ul class="p">
+        <li><strong>فلش کارت:</strong> لغات جدید رو روی فلش کارت بنویس و هر روز اونها رو مرور کن.</li>
+        <li><strong>دفترچه لغات:</strong> یه دفترچه داشته باش و لغات جدید رو به همراه معنی و مثال توش بنویس.</li>
+        <li><strong>اپلیکیشن‌های آموزشی:</strong> از اپلیکیشن‌های مختلفی که برای یادگیری لغات هستن استفاده کن.</li>
+        <li><strong>فیلم و سریال:</strong> فیلم و سریال‌های انگلیسی‌زبان ببین و سعی کن لغات جدید رو از توشون یاد بگیری.</li>
+    </ul>
+
+    <h3 class="h">گام سوم: گرامر</h3>
+    <p class="p"><strong>گرامر هم مثل لغات خیلی مهمه.</strong> برای یادگیری گرامر، از کتاب درسی و جزوه‌های معلمت استفاده کن. همچنین می‌تونی از کتاب‌های کمک آموزشی و سایت‌های آموزشی هم کمک بگیری.</p>
+
+    <h3 class="h">گام چهارم: مهارت‌های شنیداری و گفتاری</h3>
+    <p class="p"><strong>برای تقویت مهارت‌های شنیداری و گفتاری، سعی کن هر روز به فایل‌های صوتی و ویدیوهای انگلیسی گوش بدی و سعی کنی اونها رو تکرار کنی.</strong> همچنین می‌تونی با دوستات یا اعضای خانواده‌ات به زبان انگلیسی صحبت کنی.</p>
+
+    <h3 class="h">گام پنجم: نوشتن</h3>
+    <p class="p"><strong>برای تقویت مهارت نوشتاری، سعی کن هر روز یه متن کوتاه به زبان انگلیسی بنویسی.</strong> این متن می‌تونه یه خاطره، یه داستان کوتاه یا حتی یه نامه باشه.</p>
+
+    <h3 class="h">گام ششم: تمرین و تکرار</h3>
+    <p class="p"><strong>مهم‌ترین نکته تو یادگیری هر چیزی، تمرین و تکراره.</strong> سعی کن هر روز مطالب رو مرور کنی و تمرین‌های کتاب درسی و کتاب‌های کمک آموزشی رو حل کنی.</p>
+
+    <h3 class="h">گام هفتم: استفاده از منابع مختلف</h3>
+    <p class="p"><strong>برای یادگیری بهتر، از منابع مختلفی مثل کتاب‌های داستان انگلیسی، فیلم و سریال‌های انگلیسی، سایت‌های آموزشی و اپلیکیشن‌های آموزشی استفاده کن.</strong></p>
+
+    <h3 class="h">گام هشتم: شرکت در کلاس‌های زبان</h3>
+    <p class="p"><strong>اگه امکانش رو داری، حتما تو کلاس‌های زبان شرکت کن.</strong> این کلاس‌ها به تو کمک می‌کنه تا با native speaker‌ها در ارتباط باشی و تلفظ صحیح لغات رو یاد بگیری.</p>
+
+    <h3 class="h">گام نهم: صبور باش</h3>
+    <p class="p"><strong>یادگیری زبان انگلیسی یه فرآیند زمانبره.</strong> پس صبور باش و ناامید نشو. با تلاش و پشتکار، حتما به نتیجه دلخواهت میرسی.</p>
+
+    <h3 class="h">نکات مهم</h3>
+    <ul class="p">
+        <li><strong>هدف داشته باش:</strong> برای خودت یه هدف مشخص تعیین کن. مثلا اینکه می‌خوای بتونی به زبان انگلیسی فیلم ببینی یا بتونی با توریست‌ها صحبت کنی.</li>
+        <li><strong>انگیزه داشته باش:</strong> انگیزه داشتن خیلی مهمه. سعی کن همیشه انگیزه خودت رو حفظ کنی و به یاد داشته باش که چرا داری زبان انگلیسی یاد می‌گیری.</li>
+        <li><strong>از اشتباهاتت نترس:</strong> همه ما تو یادگیری اشتباه می‌کنیم. از اشتباهاتت نترس و سعی کن ازشون یاد بگیری.</li>
+        <li><strong>لذت ببر:</strong> یادگیری زبان انگلیسی باید برات لذت بخش باشه. سعی کن از این فرآیند لذت ببری و به عنوان یه سرگرمی بهش نگاه کنی.</li>
+    </ul>
+
+    <p class="p">با آرزوی موفقیت برای تو دانش آموز عزیز!</p>
+</div>
+    <!-- صفحه درس‌های زبان انگلیسی هشتم -->
+    <div id="chapters" class="section">
+        <h2>درس‌های زبان انگلیسی هشتم (Prospect 3)</h2>
+        <div class="chapter-list">
+            <!-- Lesson ۱ -->
+            <div class="chapter-item">
+                <h3 class="h">Lesson 1: My Nationality</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>دانلود جزوه Lesson 1 (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>دانلود نمونه سوالات Lesson 1 (PDF)</a>
+            </div>
+            <!-- Lesson ۲ -->
+            <div  class="chapter-item">
+                <h3>Lesson 2: My Week</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>دانلود جزوه Lesson 2 (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>دانلود نمونه سوالات Lesson 2 (PDF)</a>
+            </div>
+            <!-- Lesson ۳ -->
+            <div class="chapter-item">
+                <h3>Lesson 3: My Abilities</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>دانلود جزوه Lesson 3 (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>دانلود نمونه سوالات Lesson 3 (PDF)</a>
+            </div>
+            <!-- Lesson ۴ -->
+            <div class="chapter-item">
+                <h3>Lesson 4: My Health</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>دانلود جزوه Lesson 4 (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>دانلود نمونه سوالات Lesson 4 (PDF)</a>
+            </div>
+            <!-- Lesson ۵ -->
+            <div class="chapter-item">
+                <h3>Lesson 5: My City</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>دانلود جزوه Lesson 5 (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>دانلود نمونه سوالات Lesson 5 (PDF)</a>
+            </div>
+            <!-- Lesson ۶ -->
+            <div class="chapter-item">
+                <h3>Lesson 6: My Village</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>دانلود جزوه Lesson 6 (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>دانلود نمونه سوالات Lesson 6 (PDF)</a>
+            </div>
+            <!-- Lesson ۷ -->
+            <div class="chapter-item">
+                <h3>Lesson 7: My Hobbies</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>دانلود جزوه Lesson 7 (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>دانلود نمونه سوالات Lesson 7 (PDF)</a>
+            </div>
+        </div>
+    </div>
+    <!-- دکمه بازگشت به بالا -->
+    <button onclick="topFunction()" id="myBtn" title="بازگشت به بالا">↑</button>
+
+    <script>
+        // اسکریپت دکمه بازگشت به بالا
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

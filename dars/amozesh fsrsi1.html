@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت آموزشی فارسی هشتم</title>
+    <!-- لینک فونت Vazir -->
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+    <!-- لینک Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* استایل کلی */
+        body {
+            font-family: Vazir, sans-serif;
+            direction: rtl;
+            text-align: center;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        a:hover {
+            color: #2980b9;
+        }
+
+        /* نوار منو */
+        .navbar {
+            background: linear-gradient(90deg, #2c3e50, #34495e);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #3498db;
+        }
+
+        /* بخش‌های اصلی */
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            backdrop-filter: blur(5px);
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .download-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* لیست فصل‌ها */
+        .chapter-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .chapter-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .chapter-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .chapter-item h3 {
+            margin-top: 0;
+        }
+        .p {
+            font-size: 18px;
+            text-align: right;
+            line-height: 1.8;
+        }
+        .h {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* دکمه بازگشت به بالا */
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        #myBtn:hover {
+            background-color: #2980b9;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <!-- نوار منو -->
+    <div class="navbar">
+        <a href="#home">خانه</a>
+        <a href="#study-methods">روش درس خواندن</a>
+        <a href="#chapters">فصل‌های فارسی هشتم</a>
+    </div>
+
+    <!-- صفحه اصلی -->
+    <div id="home" class="section">
+        <h1 class="h1">به سایت آموزشی فارسی هشتم خوش آمدید!</h1>
+        <p class="p">در این سایت، می‌توانید بهترین روش‌های درس خواندن، جزوه‌های خلاصه، کتاب‌های درسی و نمونه سوالات فارسی هفتم را پیدا کنید. با ما همراه شوید تا درس خواندن را به یک تجربه لذت‌بخش تبدیل کنید.</p>
+    </div>
+
+<!-- صفحه روش درس خواندن -->
+<div id="study-methods" class="section">
+    <h2 class="h">روش مطالعه فارسی پایه هشتم برای کسب نمره کامل</h2>
+    <p class="p">سلام! من یک معلم فارسی با تجربه هستم و می‌خواهم به شما کمک کنم تا در درس فارسی پایه هشتم به بهترین شکل ممکن عمل کنید و نمره کامل بگیرید.</p>
+
+    <h3 class="h">1. کتاب درسی را جدی بگیرید</h3>
+    <p class="p"><strong>کتاب درسی، منبع اصلی شما برای مطالعه است.</strong> تمام مطالب، شعرها، داستان‌ها و قواعد دستوری در آن آمده است. قبل از هر درس، حتماً متن درس را با دقت بخوانید و سعی کنید مفهوم آن را درک کنید. به نکات مهم، تاریخ ادبیات و زندگی‌نامه نویسندگان توجه ویژه‌ای داشته باشید.</p>
+
+    <h3 class="h">2. در کلاس فعال باشید</h3>
+    <p class="p"><strong>به صحبت‌های معلم با دقت گوش دهید و سؤالات خود را بپرسید.</strong> در بحث‌های کلاسی شرکت کنید و نظرات خود را بیان کنید. از معلم بخواهید که نکات مبهم را برای شما توضیح دهد.</p>
+    <h3 class="h">3. جزوه برداری کنید</h3>
+    <p class="p"><strong>در طول کلاس، نکات مهم و کلیدی درس را در دفترچه خود یادداشت کنید.</strong> این کار به شما کمک می‌کند تا مطالب را بهتر به خاطر بسپارید و در زمان امتحان به راحتی به آن‌ها دسترسی داشته باشید.</p>
+
+    <h3 class="h">4. تمرین و تکرار</h3>
+    <p class="p"><strong>بعد از هر درس، تمرین‌های کتاب درسی را حل کنید.</strong> سؤالات سال‌های قبل را بررسی کنید و سعی کنید به آن‌ها پاسخ دهید. اگر در قسمتی از درس مشکل دارید، از معلم یا دوستان خود کمک بگیرید.</p>
+
+    <h3 class="h">5. برنامه‌ریزی داشته باشید</h3>
+    <p class="p"><strong>برای مطالعه فارسی، یک برنامه منظم داشته باشید و به آن پایبند باشید.</strong> هر روز حداقل نیم ساعت را به مطالعه فارسی اختصاص دهید. سعی کنید در طول هفته، تمام دروس را مرور کنید.</p>
+
+    <h3 class="h">6. از منابع کمک آموزشی استفاده کنید</h3>
+    <p class="p"><strong>در صورت نیاز، می‌توانید از کتاب‌های کمک آموزشی، نرم‌افزارهای آموزشی و سایت‌های آموزشی معتبر استفاده کنید.</strong> این منابع می‌توانند به شما در درک بهتر مطالب و حل تمرین‌ها کمک کنند.</p>
+
+    <h3 class="h">7. به خودتان اعتماد داشته باشید</h3>
+    <p class="p"><strong>با تلاش و پشتکار، می‌توانید در درس فارسی به بهترین نتیجه برسید.</strong> به خودتان اعتماد داشته باشید و از اشتباهات خود نترسید. همیشه به یاد داشته باشید که یادگیری یک فرآیند تدریجی است و نیاز به صبر و حوصله دارد.</p>
+
+    <h3 class="h">نکات مهم</h3>
+    <ul class="p">
+        <li><strong>به قواعد نگارش و املای کلمات توجه کنید.</strong></li>
+        <li><strong>شعرها را با دقت بخوانید و سعی کنید مفهوم آن‌ها را درک کنید.</strong></li>
+        <li><strong>داستان‌ها را با دقت بخوانید و به شخصیت‌ها، موضوع و پیام داستان توجه کنید.</strong></li>
+        <li><strong>تاریخ ادبیات را به خوبی مطالعه کنید و با زندگی‌نامه نویسندگان آشنا شوید.</strong></li>
+    </ul>
+
+    <p class="p">با رعایت این نکات و تلاش مداوم، مطمئناً می‌توانید در درس فارسی پایه هشتم نمره کامل بگیرید. موفق باشید!</p>
+</div>
+
+    <!-- صفحه فصل‌های علوم هشتم -->
+    <div id="chapters" class="section">
+        <h2>فصل‌های علوم هشتم</h2>
+        <div class="chapter-list">
+            <!-- فصل ۱ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۱: مخلوط و جداسازی مواد</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱ (PDF)</a>
+            </div>
+
+            <!-- فصل ۲ -->
+            <div class="chapter-item">
+                <h3>فصل ۲: تغییرات شیمیایی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۲ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۲ (PDF)</a>
+            </div>
+
+            <!-- فصل ۳ -->
+            <div class="chapter-item">
+                <h3>فصل ۳: از درون اتم چه خبر؟</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۳ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۳ (PDF)</a>
+            </div>
+
+            <!-- فصل ۴ -->
+            <div class="chapter-item">
+                <h3>فصل ۴: تنظیم عصبی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۴ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۴ (PDF)</a>
+            </div>
+
+            <!-- فصل ۵ -->
+            <div class="chapter-item">
+                <h3>فصل ۵: حس و حرکت</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۵ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۵ (PDF)</a>
+            </div>
+
+            <!-- فصل ۶ -->
+            <div class="chapter-item">
+                <h3>فصل ۶: تنظیم هورمونی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۶ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۶ (PDF)</a>
+            </div>
+
+            <!-- فصل ۷ -->
+            <div class="chapter-item">
+                <h3>فصل ۷: الفبای زیست‌فناوری</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۷ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۷ (PDF)</a>
+            </div>
+
+            <!-- فصل ۸ -->
+            <div class="chapter-item">
+                <h3>فصل ۸: تولید مثل در جانداران</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۸ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۸ (PDF)</a>
+            </div>
+
+            <!-- فصل ۹ -->
+            <div class="chapter-item">
+                <h3>فصل ۹: الکتریسیته</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۹ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۹ (PDF)</a>
+            </div>
+
+            <!-- فصل ۱۰ -->
+            <div class="chapter-item">
+                <h3>فصل ۱۰: مغناطیس</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱۰ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱۰ (PDF)</a>
+            </div>
+
+            <!-- فصل ۱۱ -->
+            <div class="chapter-item">
+                <h3>فصل ۱۱: نور و ویژگی‌های آن</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱۱ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱۱ (PDF)</a>
+            </div>
+
+            <!-- فصل ۱۲ -->
+            <div class="chapter-item">
+                <h3>فصل ۱۲: شکست نور</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱۲ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱۲ (PDF)</a>
+            </div>
+
+            <!-- فصل ۱۳ -->
+            <div class="chapter-item">
+                <h3>فصل ۱۳: چشم و بینایی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱۳ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱۳ (PDF)</a>
+            </div>
+
+            <!-- فصل ۱۴ -->
+            <div class="chapter-item">
+                <h3>فصل ۱۴: مواد و تغییرات آن‌ها</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱۴ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱۴ (PDF)</a>
+            </div>
+
+            <!-- فصل ۱۵ -->
+            <div class="chapter-item">
+                <h3>فصل ۱۵: انرژی و تبدیل‌های آن</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱۵ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱۵ (PDF)</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- دکمه بازگشت به بالا -->
+    <button onclick="topFunction()" id="myBtn" title="بازگشت به بالا">↑</button>
+
+    <script>
+        // اسکریپت دکمه بازگشت به بالا
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

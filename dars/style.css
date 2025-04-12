@@ -1,0 +1,228 @@
+/* استایل پایه */
+body {
+    font-family: 'Iranian Sans', sans-serif;
+    direction: rtl;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap; /* برای جلوگیری از سرریز در صفحات کوچک */
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    flex: 1 1 auto; /* برای تنظیم عرض مناسب در صفحات کوچک */
+    min-width: 100px; /* حداقل عرض برای هر لینک */
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 15px;
+    justify-content: center;
+}
+
+.card h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin: 5px 0;
+}
+
+.card ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.card ul li a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* fixed را حذف کردیم تا در موبایل مشکل ایجاد نکند */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Media Queries برای موبایل */
+@media (max-height: 3440px) {
+    nav {
+        flex-direction: column; /* لینک‌ها در صفحات کوچک به صورت عمودی نمایش داده شوند */
+    }
+
+    nav a {
+        padding: 10px; /* فضای کمتری برای لینک‌ها */
+        text-align: center;
+        font-size: 20px; /* اندازه فونت کوچک‌تر */
+    }
+
+    .card {
+        padding: 10px; /* فضای داخلی کارت‌ها کمتر شود */
+    }
+
+    .card h2 {
+        font-size: 1.2em; /* اندازه عنوان کارت‌ها کوچک‌تر شود */
+    }
+
+    footer {
+        position: relative; /* فوتر را ثابت نگه نمی‌داریم */
+        padding: 8px; /* فضای کمتری برای فوتر */
+        font-size: 12px; /* اندازه متن فوتر کوچک‌تر شود */
+    }
+
+}
+
+ @media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; 
+    }
+    header p {
+        font-size: 1em; 
+    } 
+
+     .card ul li {
+        font-size: 12px; 
+    }
+    .container {
+        flex-direction: column;  
+        align-items: center; 
+    }
+
+    .maghle {
+        width: 100%;
+        max-width: 350px;
+        align-items: center;
+    }
+
+    .maghle-img {
+        width: 100%;
+        height: auto;
+    }
+    .maghle {
+        margin-left: 60px;
+    }
+} 
+
+        
+    
+
+.maghle {
+    height: 470px;
+    width: 350px;
+    background-color: rgba(219, 215, 215, 0.397);
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex; /* فعال‌سازی فلکس‌باکس */
+    flex-direction: column; /* چیدمان عمودی */
+    align-items: center; /* تنظیم عکس و متن به صورت وسط‌چین */
+    justify-content: center; /* وسط‌چین کردن محتوا در کارت */
+    text-align: center; /* تنظیم متن‌ها در مرکز */
+    margin: auto; /* وسط‌چین کردن کارت‌ها */
+}
+
+.maghle-text {
+    text-align: center;
+    font-size: 20px;
+}
+.maghle-img {
+    width: 330px;
+    height: 320px;
+    border-radius: 10px;
+    object-fit: cover; /* تصویر به درستی داخل کارت قرار گیرد */
+    display: block;
+    margin: 0 auto; /* تنظیم خودکار برای وسط‌چین شدن */
+    margin-top: 0px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; /* برای جلوگیری از سرریز در صفحات کوچک */
+    justify-content: center; /* مرکز‌چینی عناصر */
+    /* padding: 40px; */
+    gap: 20px; /* فاصله بین کارت‌ها */
+    align-items: center;
+    text-align: center;
+  }
+  .maghale-btn {
+    background-color: #4CAF50;
+    color: white;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    padding-top: 15px;
+    margin-top: 1px;
+  }
+  .maghale-btn:hover {
+    background-color: #4caf4fe4; 
+}
+ 
+  .p {
+    font-size: 18px;
+    text-align: right;
+    line-height: 1.8;
+}
+
+
+

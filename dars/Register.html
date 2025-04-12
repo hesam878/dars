@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ثبت‌نام</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+      font-family: 'Tahoma', sans-serif;
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: 5rem auto;
+      background-color: #ffffffdd;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-title {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    .btn-custom {
+      width: 100%;
+      border-radius: 25px;
+    }
+
+    .switch-link {
+      display: block;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .error-message {
+      color: red;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container" id="register">
+    <h2 class="form-title">ثبت‌نام</h2>
+    <form id="registerForm" action="register.php" method="get" novalidate>
+      <div class="mb-3">
+        <label for="fullname" class="form-label">نام و نام خانوادگی</label>
+        <input type="text" class="form-control" name="fullname" id="fullname" placeholder="نام و نام خانوادگی خود را بنویسید" />
+        <div class="error-message" id="fullnameError"></div>
+      </div>
+
+      <div class="mb-3">
+        <label for="mobile" class="form-label">موبایل</label>
+        <input type="text" class="form-control" name="mobile" id="mobile" placeholder="شماره موبایل خود را بنویسید" />
+        <div class="error-message" id="mobileError"></div>
+      </div>
+
+      <div class="mb-3">
+        <label for="username" class="form-label">نام کاربری</label>
+        <input type="text" class="form-control" name="username" id="username" placeholder="یک نام کاربری انتخاب کنید" />
+        <div class="error-message" id="usernameError"></div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">ایمیل</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="ایمیل معتبر وارد کنید" />
+        <div class="error-message" id="emailError"></div>
+      </div>
+
+      <div class="mb-3">
+        <label for="Pass" class="form-label">رمز عبور</label>
+        <input type="password" class="form-control"  name="password" id="Pass" placeholder="رمز عبور انتخاب کنید" />
+        <div class="error-message" id="passError"></div>
+      </div>
+
+      <button type="submit" class="btn btn-success btn-custom">ثبت‌نام</button>
+      <a href="login.html" class="switch-link text-success">قبلاً ثبت‌نام کرده‌اید؟ وارد شوید</a>
+    </form>
+  </div>
+
+  <!-- <script>
+    document.getElementById("registerForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // گرفتن مقادیر
+      let fullname = document.getElementById("fullname").value.trim();
+      let mobile = document.getElementById("mobile").value.trim();
+      let username = document.getElementById("username").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let password = document.getElementById("Pass").value;
+
+      // پاک کردن خطاهای قبلی
+      document.getElementById("fullnameError").textContent = "";
+      document.getElementById("mobileError").textContent = "";
+      document.getElementById("usernameError").textContent = "";
+      document.getElementById("emailError").textContent = "";
+      document.getElementById("passError").textContent = "";
+
+      let isValid = true;
+
+      // اعتبارسنجی نام و نام خانوادگی
+      if (fullname === "") {
+        document.getElementById("fullnameError").textContent = "لطفاً نام و نام خانوادگی را وارد کنید.";
+        isValid = false;
+      }
+
+      // اعتبارسنجی موبایل
+      const mobileRegex = /^09\d{9}$/;
+      if (!mobileRegex.test(mobile)) {
+        document.getElementById("mobileError").textContent = "شماره موبایل باید با 09 شروع شود و 11 رقم باشد.";
+        isValid = false;
+      }
+
+      // اعتبارسنجی نام کاربری
+      if (username.length < 3) {
+        document.getElementById("usernameError").textContent = "نام کاربری باید حداقل ۳ حرف باشد.";
+        isValid = false;
+      }
+
+      // اعتبارسنجی ایمیل
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        document.getElementById("emailError").textContent = "ایمیل وارد شده معتبر نیست.";
+        isValid = false;
+      }
+
+      // اعتبارسنجی رمز عبور
+      if (password.length < 6) {
+        document.getElementById("passError").textContent = "رمز عبور باید حداقل ۶ کاراکتر باشد.";
+        isValid = false;
+      }
+
+      // اگر همه چیز درست بود
+      if (isValid) {
+        alert("ثبت‌نام با موفقیت انجام شد!");
+        // اینجا می‌تونی داده‌ها رو به بک‌اند ارسال کنی
+        // e.g. sendToServer(fullname, mobile, email, username, password);
+      }
+    });
+  </script> -->
+</body>
+</html>

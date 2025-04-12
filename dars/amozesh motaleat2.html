@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت آموزشی مطالعات اجتماعی نهم</title>
+    <!-- لینک فونت Vazir -->
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+    <!-- لینک Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* استایل کلی */
+        body {
+            font-family: Vazir, sans-serif;
+            direction: rtl;
+            text-align: center;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        a:hover {
+            color: #2980b9;
+        }
+
+        /* نوار منو */
+        .navbar {
+            background: linear-gradient(90deg, #2c3e50, #34495e);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #3498db;
+        }
+
+        /* بخش‌های اصلی */
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            backdrop-filter: blur(5px);
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .download-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* لیست فصل‌ها */
+        .chapter-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .chapter-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .chapter-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .chapter-item h3 {
+            margin-top: 0;
+        }
+        .p {
+            font-size: 18px;
+            text-align: right;
+            line-height: 1.8;
+        }
+        .h {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* دکمه بازگشت به بالا */
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        #myBtn:hover {
+            background-color: #2980b9;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <!-- نوار منو -->
+    <div class="navbar">
+        <a href="#home">خانه</a>
+        <a href="#study-methods">روش درس خواندن</a>
+        <a href="#chapters">فصل‌های مطالعات نهم</a>
+    </div>
+
+    <!-- صفحه اصلی -->
+    <div id="home" class="section">
+        <h1 class="h">به سایت آموزشی مطالعات اجتماعی نهم خوش آمدید!</h1>
+        <p class="p">در این سایت، می‌توانید بهترین روش‌های درس خواندن، جزوه‌های خلاصه، کتاب‌های درسی و نمونه سوالات ریاضی هفتم را پیدا کنید. با ما همراه شوید تا درس خواندن را به یک تجربه لذت‌بخش تبدیل کنید.</p>
+    </div>
+
+<!-- صفحه روش درس خواندن -->
+<div id="study-methods" class="section">
+    <h2 class="h">راهنمای جامع مطالعه ریاضی پایه هشتم برای کسب نمره کامل</h2>
+    <p class="p">در این سایت، می‌توانید بهترین روش‌های درس خواندن، جزوه‌های خلاصه، کتاب‌های درسی و نمونه سوالات ریاضی هفتم را پیدا کنید. با ما همراه شوید تا درس خواندن را به یک تجربه لذت‌بخش تبدیل کنید.</p>
+
+    <h3 class="h">1. حضور فعال در کلاس درس</h3>
+    <p class="p"><strong>به دقت گوش کن:</strong> توی کلاس درس تمام حواست رو به معلم بده و به دقت توضیحش گوش کن. اگر سوالی برات پیش اومد، حتماً بپرس تا کاملاً متوجه بشی.</p>
+    <p class="p"><strong>یادداشت بردار:</strong> نکات مهم و فرمول‌ها رو توی دفترت یادداشت کن. این کار بهت کمک می‌کنه تا مطالب رو بهتر به خاطر بسپاری.</p>
+    <p class="p"><strong>شرکت کن:</strong> سعی کن توی بحث‌های کلاسی شرکت کنی و به سوالات معلم جواب بدی. این کار باعث می‌شه شه تا مطالب رو عمیق‌تر یاد بگیری.</p>
+
+    <h3 class="h">2. مطالعه منظم</h3>
+    <p class="p"><strong>مرور درس:</strong> بعد از هر کلاس، درس همون روز رو یه بار دیگه مرور کن. این کار باعث می‌شه تا مطالب توی ذهنت تثبیت بشن.</p>
+    <p class="p"><strong>حل تمرین:</strong> تمرین‌های کتاب درسی و نمونه سوالات رو حل کن. هر چقدر بیشتر تمرین کنی، مسلط‌تر می‌شی.</p>
+    <p class="p"><strong>خلاصه نویسی:</strong> فرمول‌ها و نکات مهم هر فصل رو توی یه دفترچه شغلی بنویس. این کار بهت کمک می‌کنه تا موقع امتحان راحت‌تر مطالب رو مرور کنی.</p>
+
+    <h3 class="h">3. استفاده از منابع کمک آموزشی</h3>
+    <p class="p"><strong>کتاب‌های کمک درسی:</strong> از کتاب‌های کمک درسی معتبر استفاده کن. این کتاب‌ها معمولاً درسنامه‌های جامع و تست‌های متنوعی دارن.</p>
+    <p class="p"><strong>سایت‌های آموزشی:</strong> از سایت‌های آموزشی معتبر که مطالب ریاضی رو به صورت ویدئویی و محتوایی آموزش می‌دن، استفاده کن.</p>
+    <p class="p"><strong>معلم خصوصی:</strong> اگر احساس می‌کنی نیاز به کمک بیشتر داری، می‌تونی از یک معلم خصوصی کمک بگیری.</p>
+
+    <h3 class="h">4. برنامه‌ریزی</h3>
+    <p class="p"><strong>برنامه هفتگی:</strong> یه برنامه هفتگی برای مطالعه ریاضی داشته باش و سعی کن به اون پایبند باشی.</p>
+    <p class="p"><strong>زمانبندی:</strong> برای هر فصل از کتاب یه زمان مشخص تعیین کن و سعی کن توی اون زمان مطالب رو تموم کنی.</p>
+    <p class="p"><strong>استراحت:</strong> بین ساعات به خودت استراحت بده تا خسته نشی.</p>
+
+    <h3 class="h">5. تمرکز و آرامش</h3>
+    <p class="p"><strong>مکان مناسب:</strong> یه مکان آروم و بدون حواس پرتی برای مطالعه انتخاب کن.</p>
+    <p class="p"><strong>مطالعه:</strong> موقع مطالعه تمام حواست رو به درس بده و از فکر کردن به چیزهای دیگر خودداری کن.</p>
+    <p class="p"><strong>ذخیره کافی:</strong> قبل از امتحان به اندازه کافی برای اقامت کن تا با انرژی کامل سر جلسه حاضر بشی.</p>
+
+    <h3 class="h">6. تغذیه مناسب</h3>
+    <p class="p"><strong>غذای سالم:</strong> از غذاهای سالم و مقوی استفاده کن. تغذیه مناسب به عملکرد مغزت کمک می‌کند.</p>
+    <p class="p"><strong>آب کافی:</strong> به اندازه کافی آب بنوش. کم آبی باعث می‌شه و کاهش می‌دهد.</p>
+
+    <h3 class="h">7. اعتماد به نفس</h3>
+    <p class="p"><strong>باور داشته باش:</strong> به خودت باور داشته باش که می‌تونی نمره کامل رو بگیری.</p>
+    <p class="p"><strong>جستجو کن:</strong> با تلاش و پشتکار به هدفت می‌رسی.</p>
+
+    <h3 class="h">نکات مهم</h3>
+    <p class="p"><strong>سوال بپرس:</strong> اگر چیزی رو متوجه نشدی، حتماً از معلمت بپرس.</p>
+    <p class="p"><strong>تمرین کن:</strong> هر چقدر بیشتر تمرین کنی، مسلط‌تر می‌شی.</p>
+    <p class="p"><strong>کن:</strong> مطالب رو به طور منظم مرور کن تا فراموش نکنی.</p>
+    <p class="p"><strong>حفاظ کن:</strong> به اندازه کافی استراحت کن تا خسته نشی.</p>
+    <p class="p"><strong>تغذیه مناسب:</strong> از غذاهای سالم و مقوی استفاده کن.</p>
+    <p class="p"><strong>اعتماد به نفس:</strong> به خودت باور داشته باش.</p>
+
+    <p class="p">با رعایت این نکات و تلاش و پشت، مطمئن باش که می‌تونی بهترین نتیجه رو توی درس ریاضی پایه هشتم بگیری و حتی نمره کامل رو کسب کنی. موفق باشی!</p>
+</div>
+    <!-- صفحه فصل‌های علوم هشتم -->
+    <div id="chapters" class="section">
+        <h2 class="h">فصل‌های مطالعات اجتماعی نهم</h2>
+        <div class="chapter-list">
+            <!-- فصل ۱ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۱: مخلوط و جداسازی مواد</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱ (PDF)</a>
+            </div>
+
+            <!-- فصل ۲ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۲: تغییرات شیمیایی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۲ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۲ (PDF)</a>
+            </div>
+
+            <!-- فصل ۳ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۳: از درون اتم چه خبر؟</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۳ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۳ (PDF)</a>
+            </div>
+
+            <!-- فصل ۴ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۴: تنظیم عصبی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۴ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۴ (PDF)</a>
+            </div>
+
+            <!-- فصل ۵ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۵: حس و حرکت</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۵ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۵ (PDF)</a>
+            </div>
+
+            <!-- فصل ۶ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۶: تنظیم هورمونی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۶ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۶ (PDF)</a>
+            </div>
+
+            <!-- فصل ۷ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۷: الفبای زیست‌فناوری</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۷ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۷ (PDF)</a>
+            </div>
+
+            <!-- فصل ۸ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۸: تولید مثل در جانداران</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۸ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۸ (PDF)</a>
+            </div>
+
+            <!-- فصل ۹ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۹: الکتریسیته</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۹ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۹ (PDF)</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- دکمه بازگشت به بالا -->
+    <button onclick="topFunction()" id="myBtn" title="بازگشت به بالا">↑</button>
+
+    <script>
+        // اسکریپت دکمه بازگشت به بالا
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

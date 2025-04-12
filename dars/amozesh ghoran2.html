@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت آموزشی مطالعات اجتماعی نهم</title>
+    <!-- لینک فونت Vazir -->
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+    <!-- لینک Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* استایل کلی */
+        body {
+            font-family: Vazir, sans-serif;
+            direction: rtl;
+            text-align: center;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        a:hover {
+            color: #2980b9;
+        }
+
+        /* نوار منو */
+        .navbar {
+            background: linear-gradient(90deg, #2c3e50, #34495e);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #3498db;
+        }
+
+        /* بخش‌های اصلی */
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            backdrop-filter: blur(5px);
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .download-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* لیست فصل‌ها */
+        .chapter-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .chapter-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .chapter-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .chapter-item h3 {
+            margin-top: 0;
+        }
+        .p {
+            font-size: 18px;
+            text-align: right;
+            line-height: 1.8;
+        }
+        .h {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* دکمه بازگشت به بالا */
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        #myBtn:hover {
+            background-color: #2980b9;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <!-- نوار منو -->
+    <div class="navbar">
+        <a href="#home">خانه</a>
+        <a href="#study-methods">روش درس خواندن</a>
+        <a href="#chapters">فصل‌های قرآن نهم</a>
+    </div>
+
+    <!-- صفحه اصلی -->
+    <div id="home" class="section">
+        <h1 class="h">به سایت آموزشی قرآن نهم خوش آمدید!</h1>
+        <p class="p">در این سایت، می‌توانید بهترین روش‌های درس خواندن، جزوه‌های خلاصه، کتاب‌های درسی و نمونه سوالات قرآن هفتم را پیدا کنید. با ما همراه شوید تا درس خواندن را به یک تجربه لذت‌بخش تبدیل کنید.</p>
+    </div>
+
+<!-- صفحه روش درس خواندن -->
+<div id="study-methods" class="section">
+    <h2 class="h">راهنمای جامع مطالعه قرآن پایه نهم برای کسب نمره کامل</h2>
+    <p class="p">سلام دانش‌آموز عزیز! خوشحالم که به دنبال راهنمایی برای مطالعه قرآن پایه نهم هستی. قرآن کتاب آسمانی ماست و خواندن و فهمیدن آن بسیار ارزشمند است. برای اینکه بتوانی در این درس نمره کامل بگیری، باید با برنامه‌ریزی و روش صحیح مطالعه کنی. در اینجا راهنمایی کامل برایت آماده کرده‌ام:</p>
+
+    <h3 class="h">1. برنامه‌ریزی</h3>
+    <p class="p"><strong>هدف گذاری:</strong> ابتدا هدف خود را مشخص کن. آیا می‌خواهی فقط نمره بگیری یا می‌خواهی قرآن را بفهمی و به آن عمل کنی؟ هرچه هدف بزرگتر باشد، انگیزه بیشتری خواهی داشت.</p>
+    <p class="p"><strong>زمانبندی:</strong> برای مطالعه قرآن زمان مشخصی را در برنامه روزانه خود قرار بده. حتی 15 دقیقه مطالعه منظم، بهتر از مطالعه نامنظم و طولانی است.</p>
+    <p class="p"><strong>مکان مناسب:</strong> مکانی آرام و بدون اغتشاشات را برای مطالعه انتخاب کن. جایی که بتوانی تمرکز کنی و صدای مزاحم نباشد.</p>
+
+    <h3 class="h">2. روش مطالعه</h3>
+    <p class="p"><strong>قرائت صحیح:</strong> سعی کن قرائت قرآن خود را با گوش دادن به قاریان مشهور و تمرین، بهبود ببخشی. قرائت صحیح، اولین قدم برای فهم قرآن است.</p>
+    <p class="p"><strong>فهم معانی:</strong> به دنبال فهم معانی آیات باش. می‌توانی از ترجمه‌های معتبر و تفاسیر ساده استفاده کنی.</p>
+    <p class="p"><strong>تدبر در آیات:</strong> فقط به خواندن و فهمیدن معانی اکتفا نکن. در آیات تدبر کن و سعی کن پیام‌های آن را برای زندگی خودت پیدا کنی.</p>
+    <p class="p"><strong>حفظ آیات:</strong> سعی کن تعدادی از آیات مهم را حفظ کنی. حفظ آیات به تو کمک می‌کند تا همیشه با قرآن در ارتباط باشی.</p>
+    <p class="p"><strong>تکرار و مرور:</strong> مطالب را به طور منظم تکرار و مرور کن. این کار باعث می‌شود که مطالب در ذهن تو تثبیت شوند.</p>
+
+    <h3 class="h">3. نکات مهم</h3>
+    <p class="p"><strong>استمرار:</strong> مطالعه قرآن را به طور منظم و پیوسته انجام بده. حتی اگر روزی نتوانستی زیاد بخوانی، سعی کن حتماً چند آیه را تلاوت کنی.</p>
+    <p class="p"><strong>اخلاص:</strong> نیت خود را در مطالعه قرآن خالص کن. فقط برای رضای خدا بخوان و نه برای نمره یا تعریف دیگران.</p>
+    <p class="p"><strong>کمک گرفتن:</strong> اگر در فهم آیات مشکل داشتی، از معلم، والدین یا دوستان خود کمک بگیر.</p>
+    <p class="p"><strong>دعا:</strong> از خدا بخواه که تو را در فهم قرآن و عمل به آن یاری کند.</p>
+
+    <h3 class="h">4. برای امتحان</h3>
+    <p class="p"><strong>مطالعه کتاب درسی:</strong> کتاب درسی قرآن پایه نهم را به دقت مطالعه کن و تمام نکات مهم را یاد بگیر.</p>
+    <p class="p"><strong>حل نمونه سوالات:</strong> نمونه سوالات سال‌های قبل را حل کن تا با نحوه سوالات آشنا شوی.</p>
+    <p class="p"><strong>مرور مطالب:</strong> قبل از امتحان، مطالب را به طور کامل مرور کن.</p>
+
+    <h3 class="h">5. توصیه‌های پایانی</h3>
+    <p class="p"><strong>به قرآن عمل کن:</strong> سعی کن آنچه را که از قرآن یاد می‌گیری در زندگی خود به کار ببندی. قرآن فقط برای خواندن نیست، بلکه برای عمل کردن است.</p>
+    <p class="p"><strong>از قرآن لذت ببر:</strong> قرآن کتابی است که اگر با آن ارتباط برقرار کنی، از آن لذت خواهی برد. سعی کن با قرآن دوست شوی و از آن بهره ببری.</p>
+
+    <p class="p">با آرزوی موفقیت برای تو در درس قرآن! امیدوارم با این راهنمایی بتوانی بهترین نتیجه را بگیری.</p>
+</div>
+    <!-- صفحه فصل‌های علوم هشتم -->
+    <div id="chapters" class="section">
+        <h2 class="h">فصل‌های مطالعات اجتماعی نهم</h2>
+        <div class="chapter-list">
+            <!-- فصل ۱ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۱: مخلوط و جداسازی مواد</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱ (PDF)</a>
+            </div>
+
+            <!-- فصل ۲ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۲: تغییرات شیمیایی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۲ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۲ (PDF)</a>
+            </div>
+
+            <!-- فصل ۳ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۳: از درون اتم چه خبر؟</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۳ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۳ (PDF)</a>
+            </div>
+
+            <!-- فصل ۴ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۴: تنظیم عصبی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۴ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۴ (PDF)</a>
+            </div>
+
+            <!-- فصل ۵ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۵: حس و حرکت</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۵ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۵ (PDF)</a>
+            </div>
+
+            <!-- فصل ۶ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۶: تنظیم هورمونی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۶ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۶ (PDF)</a>
+            </div>
+
+            <!-- فصل ۷ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۷: الفبای زیست‌فناوری</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۷ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۷ (PDF)</a>
+            </div>
+
+            <!-- فصل ۸ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۸: تولید مثل در جانداران</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۸ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۸ (PDF)</a>
+            </div>
+
+            <!-- فصل ۹ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۹: الکتریسیته</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۹ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۹ (PDF)</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- دکمه بازگشت به بالا -->
+    <button onclick="topFunction()" id="myBtn" title="بازگشت به بالا">↑</button>
+
+    <script>
+        // اسکریپت دکمه بازگشت به بالا
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

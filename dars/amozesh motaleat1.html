@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت آموزشی مطالعات اجتماعی هشتم</title>
+    <!-- لینک فونت Vazir -->
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+    <!-- لینک Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* استایل کلی */
+        body {
+            font-family: Vazir, sans-serif;
+            direction: rtl;
+            text-align: center;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        a:hover {
+            color: #2980b9;
+        }
+
+        /* نوار منو */
+        .navbar {
+            background: linear-gradient(90deg, #2c3e50, #34495e);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #3498db;
+        }
+
+        /* بخش‌های اصلی */
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            backdrop-filter: blur(5px);
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .download-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* لیست فصل‌ها */
+        .chapter-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .chapter-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .chapter-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .chapter-item h3 {
+            margin-top: 0;
+        }
+        .p {
+            font-size: 18px;
+            text-align: right;
+            line-height: 1.8;
+        }
+        .h {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* دکمه بازگشت به بالا */
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        #myBtn:hover {
+            background-color: #2980b9;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <!-- نوار منو -->
+    <div class="navbar">
+        <a href="#home">خانه</a>
+        <a href="#study-methods">روش درس خواندن</a>
+        <a href="#chapters">فصل‌های مطالعات اجتماعی هشتم</a>
+    </div>
+
+    <!-- صفحه اصلی -->
+    <div id="home" class="section">
+        <h1 class="h">به سایت آموزشی مطالعات اجتماعی هشتم خوش آمدید!</h1>
+        <p class="p">در این سایت، می‌توانید بهترین روش‌های درس خواندن، جزوه‌های خلاصه، کتاب‌های درسی و نمونه سوالات ریاضی هفتم را پیدا کنید. با ما همراه شوید تا درس خواندن را به یک تجربه لذت‌بخش تبدیل کنید.</p>
+    </div>
+
+  <!-- صفحه روش درس خواندن -->
+<div id="study-methods" class="section">
+    <h2 class="h">راهنمای جامع مطالعه درس مطالعات اجتماعی پایه هفتم برای کسب نمره کامل</h2>
+    <p class="p">سلام دانش‌آموز عزیز! من اینجا هستم تا به کمک کنم درس مطالعات اجتماعی پایه هفتم رو به بهترین شکل ممکن بخونی و نمره کامل بگیری. آماده‌ای؟ پس با دقت به این نکات گوش کن:</p>
+
+    <h3 class="h">1. برنامه‌ریزی و مدیریت زمان</h3>
+    <p class="p"><strong>برنامه هفتگی:</strong> یه برنامه هفتگی برای خودت تنظیم کن که توی آن زمان مشخصی رو برای مطالعه درس مطالعات اجتماعی در نظر بگیر. اینطوری مطمئن می‌شی که هیچ وقت این درس رو فراموش نمی‌کنی و همیشه براش وقت داری.</p>
+    <p class="p"><strong>زمانبندی:</strong> سعی کن هر روز یه مقدار مشخص از درس رو بخونی، حتی اگه کم باشه. این کار باعث می‌شه مطالب توی ذهنت بمونه و نباشی همه‌شون رو یه دفعه بخونی.</p>
+    <p class="p"><strong>استراحت:</strong> هر یه ساعت مطالعه، یه استراحت کوتاه داشته باش. مثلاً 10 دقیقه قدم بزن یا یه خوراکی بخور. انرژی اینطوری بیشتر می‌شه و بهتر می‌تونی درس بخونی.</p>
+
+    <h3 class="h">2. مطالعه فعال</h3>
+    <p class="p"><strong>پیشخوانی:</strong> قبل از اینکه معلم درس رو توضیح بده، یه بار متن کتاب رو بخون. اینطوری وقتی معلم درس می‌ده، تو خیلی بهتر متوجه مطالب می‌شی.</p>
+    <p class="p"><strong>یادداشت‌برداری:</strong> موقع درس خوندن، نکات مهم رو یادداشت کن. می‌تونی از کلمات کلیدی، جدول‌ها و نمودارها برای این کار استفاده کنی. اینطوری مطالب توی ذهنت سازمان‌دهی می‌شه و راحت‌تر می‌تونی اون‌ها رو به یاد بیاری.</p>
+    <p class="p"><strong>خلاصه نویسی:</strong> بعد از هر درس، سعی کن مطالب مهم اون درس رو به زبان خودت خلاصه کنی. این کار باعث می‌شه مطمئن بشی که مطالب رو خوب فهمیدی.</p>
+    <p class="p"><strong>تکرار و مرور:</strong> مطالب رو به طور منظم تکرار کن. می‌تونی از فلش کارت‌ها یا نرم‌افزارهای آموزشی برای این کار استفاده کنی. اینطوری مطالب توی حافظه بلندمدتت ثبت می‌شن و دیگه فراموششون نمی‌کنی.</p>
+
+    <h3 class="h">3. استفاده از منابع مختلف</h3>
+    <p class="p"><strong>کتاب درسی:</strong> کتاب درسی اصلی‌ترین منبع تو برای مطالعه. حتماً همه‌ی مطالب و فعالیت‌های اون رو به دقت بخون و انجام بده.</p>
+    <p class="p"><strong>کتاب‌های کمک آموزشی:</strong> کتاب‌های کمک آموزشی می‌تونن به شما کمک کنند تا مطالب رو بهتر بفهمید و تمرین‌های بیشتر حل کنید.</p>
+    <p class="p"><strong>سایت‌های آموزشی:</strong> سایت‌های آموزشی بسیاری هستند که مطالب مرتبط با درس مطالعات اجتماعی رو ارائه می‌دهند. می‌تونی از این سایت‌ها برای بررسی بیشتر و حل نمونه‌سوالات استفاده کنی.</p>
+    <p class="p"><strong>معلم:</strong> اگه آگهی داری، حتماً از معلمت بپرس. معلمت بهترین منبع برای راهنمایی و کمک به توئه.</p>
+
+    <h3 class="h">4. شرکت در فعالیت‌های کلاسی</h3>
+    <p class="p"><strong>حضور فعال:</strong> سعی کن همیشه توی کلاس حضور داشته باشی و به صحبت‌های معلم گوش کنی.</p>
+    <p class="p"><strong>مشارکت:</strong> توی فعالیت‌های کلاسی شرکت کن و نظرات رو بیان کن. این کار باعث می‌شه مطالب رو بهتر بفهمی و اعتماد به نفس بیشتر پیدا کنی.</p>
+    <p class="p"><strong>انجام تکالیف:</strong> همه‌ی تکالیف معلم رو به موقع انجام بده. این کار باعث می‌شه مطالب توی ذهنت تثبیت بشه و برای امتحان آماده بشی.</p>
+    <p class="p"><strong>انجام تکالیف:</strong> همه‌ی تکالیف معلم رو به موقع انجام بده. این کار باعث می‌شه مطالب توی ذهنت تثبیت بشه و برای امتحان آماده بشی.</p>
+
+    <h3 class="h">5. آمادگی برای امتحان</h3>
+    <p class="p"><strong>مرور مطالب:</strong> قبل از امتحان، همه مطالب رو مرور کن. می‌تونی از خلاصه‌هایی که نوشتی یا فلش کارت‌ها برای این کار استفاده کنی.</p>
+    <p class="p"><strong>حل نمونه سوالات:</strong> نمونه سوالات سال‌های قبل رو حل کن. این کار باعث می‌شه با انواع سؤالات آشنا بشی و بتونی سرعت و دقت خودت رو توی امتحان بالا ببری.</p>
+    <p class="p"><strong>استراحت کافی:</strong> شب قبل از امتحان، به اندازه کافی بخواب. استراحت کافی باعث می‌شه که توی امتحان با انرژی کامل حاضر باشی و بتونی بهترین عملکرد رو ارائه بدی.</p>
+
+    <h3 class="h">نکات مهم</h3>
+    <p class="p"><strong>علاقه‌مند شو:</strong> سعی کن به درس مطالعات اجتماعی علاقه‌مند بشی. وقتی به یه درس علاقه داری، خیلی راحت‌تر می‌تونی اون رو یاد بگیری.</p>
+    <p class="p"><strong>تمرکز کن:</strong> موقع درس خوندن تمام حواست رو به درس بده و از چیزهایی که حواست رو پرت می‌کنه دوری کن.</p>
+    <p class="p"><strong>مثبت باش:</strong> به خودت اعتماد داشته باش و مطمئن باش که می‌توانی نمره کامل بگیری.</p>
+
+    <p class="p">با انجام این کارها، مطمئن باشید که می‌تونی درس مطالعات اجتماعی پایه هفتم رو به بهترین شکل ممکن بخونی و نمره کامل بگیری. موفق باشی!</p>
+</div>
+    <!-- صفحه فصل‌های علوم هشتم -->
+    <div id="chapters" class="section">
+        <h2 class="h">فصل‌های علوم هفتم</h2>
+        <div class="chapter-list">
+            <!-- فصل ۱ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۱: مخلوط و جداسازی مواد</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱ (PDF)</a>
+            </div>
+
+            <!-- فصل ۲ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۲: تغییرات شیمیایی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۲ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۲ (PDF)</a>
+            </div>
+
+            <!-- فصل ۳ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۳: از درون اتم چه خبر؟</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۳ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۳ (PDF)</a>
+            </div>
+
+            <!-- فصل ۴ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۴: تنظیم عصبی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۴ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۴ (PDF)</a>
+            </div>
+
+            <!-- فصل ۵ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۵: حس و حرکت</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۵ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۵ (PDF)</a>
+            </div>
+
+            <!-- فصل ۶ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۶: تنظیم هورمونی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۶ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۶ (PDF)</a>
+            </div>
+
+            <!-- فصل ۷ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۷: الفبای زیست‌فناوری</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۷ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۷ (PDF)</a>
+            </div>
+
+            <!-- فصل ۸ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۸: تولید مثل در جانداران</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۸ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۸ (PDF)</a>
+            </div>
+
+            <!-- فصل ۹ -->
+            <div class="chapter-item">
+                <h3 class="h">فصل ۹: الکتریسیته</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۹ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۹ (PDF)</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- دکمه بازگشت به بالا -->
+    <button onclick="topFunction()" id="myBtn" title="بازگشت به بالا">↑</button>
+
+    <script>
+        // اسکریپت دکمه بازگشت به بالا
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

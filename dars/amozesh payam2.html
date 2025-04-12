@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت آموزشی پیام‌های آسمانی نهم</title>
+    <!-- لینک فونت Vazir -->
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+    <!-- لینک Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* استایل کلی */
+        body {
+            font-family: Vazir, sans-serif;
+            direction: rtl;
+            text-align: center;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        a:hover {
+            color: #2980b9;
+        }
+
+        /* نوار منو */
+        .navbar {
+            background: linear-gradient(90deg, #2c3e50, #34495e);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #3498db;
+        }
+
+        /* بخش‌های اصلی */
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            backdrop-filter: blur(5px);
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .download-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* لیست فصل‌ها */
+        .chapter-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .chapter-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .chapter-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .chapter-item h3 {
+            margin-top: 0;
+        }
+        .p {
+            font-size: 18px;
+            text-align: right;
+            line-height: 1.8;
+        }
+        .h {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* دکمه بازگشت به بالا */
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        #myBtn:hover {
+            background-color: #2980b9;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <!-- نوار منو -->
+    <div class="navbar">
+        <a href="#home">خانه</a>
+        <a href="#study-methods">روش درس خواندن</a>
+        <a href="#chapters">درس های پیام‌های آسمانی نهم</a>
+    </div>
+
+    <!-- صفحه اصلی -->
+    <div id="home" class="section">
+        <h1 class="h1">به سایت آموزشی پیام‌های آسمانی نهم خوش آمدید!</h1>
+        <p class="p">در این سایت، می‌توانید بهترین روش‌های درس خواندن، جزوه‌های خلاصه، کتاب‌های درسی و نمونه سوالات پیام‌های آسمانی نهم را پیدا کنید. با ما همراه شوید تا درس خواندن را به یک تجربه لذت‌بخش تبدیل کنید.</p>
+    </div>
+
+<!-- صفحه روش درس خواندن -->
+<div id="study-methods" class="section">
+    <h2 class="h">روش مطالعه پیام‌های آسمانی پایه نهم برای کسب نمره کامل</h2>
+    <p class="p">سلام دوست من! خیلی خوشحالم که به عنوان یک معلم با تجربه پیام‌های آسمانی در خدمتت هستم. درس پیام‌های آسمانی پایه نهم، درسی بسیار شیرین و پر از نکات آموزنده است که با یادگیری صحیح آن، نه تنها نمره کامل می‌گیری، بلکه می‌توانید راه و رسم درست زندگی را نیز بیاموزید. در این مطلب، روش مطالعه این درس را به طور کامل برایت توضیح می‌دهم تا بتوانی به بهترین شکل ممکن از آن بهره ببری.</p>
+
+    <h3 class="h">1. شناخت کتاب درسی</h3>
+    <p class="p"><strong>در ابتدا، باید با کتاب درسی پیام‌های آسمانی پایه نهم به خوبی آشنا شوی.</strong> این کتاب شامل 12 درس است که هر کدام به موضوعی خاص از زندگی انسان می‌پردازد. برای موفقیت در این درس، باید بدانی که هر درس در مورد چه چیزی صحبت می‌کند و چه نکات مهمی را در خود دارد.</p>
+
+    <h3 class="h">2. مطالعه دقیق دروس</h3>
+    <p class="p"><strong>بعد از شناخت کتاب، نوبت به مطالعه دقیق دروس می‌رسد.</strong> در هنگام مطالعه، به نکات زیر توجه کن:</p>
+    <ul class="p">
+        <li><strong>متن درس:</strong> متن درس را با دقت بخوان و سعی کن مفهوم آن را به خوبی درک کنی. اگر قسمتی از درس را متوجه نشدی، چند بار آن را بخوان یا از معلم خود کمک بگیر.</li>
+        <li><strong>آیات و روایات:</strong> آیات و روایات مهم‌ترین بخش‌های درس هستند. آن‌ها را با دقت بخوان و سعی کن معنای آن‌ها را بفهمی. همچنین، به ارتباط آیات و روایات با متن درس توجه کن.</li>
+        <li><strong>فعالیت‌ها و خودآزمایی‌ها:</strong> فعالیت‌ها و خودآزمایی‌های کتاب به منظور تثبیت یادگیری شما طراحی شده‌اند. حتماً به آن‌ها پاسخ بده و در صورت لزوم از معلم خود کمک بگیر.</li>
+    </ul>
+
+    <h3 class="h">3. یادداشت‌برداری</h3>
+    <p class="p"><strong>در هنگام مطالعه، نکات مهم هر درس را در دفتری یادداشت کن.</strong> این کار به شما کمک می‌کند تا مطالب را بهتر به خاطر بسپارید و در زمان مرور، به راحتی به آن‌ها دسترسی داشته باشید.</p>
+
+    <h3 class="h">4. مرور و تکرار</h3>
+    <p class="p"><strong>بعد از مطالعه هر درس، مطالب آن را مرور کن و نکات مهم آن را دوباره بخوان.</strong> این کار باعث می‌شود که مطالب در ذهن شما تثبیت شوند و فراموش نشوند.</p>
+
+    <h3 class="h">5. استفاده از منابع کمک آموزشی</h3>
+    <p class="p"><strong>برای یادگیری بهتر، می‌توانی از منابع کمک آموزشی مانند کتاب‌های کمک درسی، جزوه‌ها و فیلم‌های آموزشی استفاده کنی.</strong> این منابع می‌توانند به شما کمک کنند تا مطالب را به صورت عمیق‌تر و مفهومی‌تر یاد بگیرید.</p>
+
+    <h3 class="h">6. شرکت در کلاس‌های درس</h3>
+    <p class="p"><strong>حضور فعال در کلاس‌های درس و گوش دادن به توضیحات معلم، نقش بسیار مهمی در یادگیری پیام‌های آسمانی دارد.</strong> در کلاس‌ها، سؤالات خود را از معلم بپرسید و در بحث‌ها شرکت کنید.</p>
+
+    <h3 class="h">7. تمرین و تکرار نمونه سؤالات</h3>
+    <p class="p"><strong>برای آمادگی بیشتر برای امتحانات، نمونه سؤالات سال‌های قبل را تهیه کنید و به آن‌ها پاسخ دهید.</strong> این کار به شما کمک می‌کند تا با نحوه سؤالات آشنا شوید و نقاط ضعف خود را شناسایی کنید.</p>
+
+    <h3 class="h">8. توکل به خدا و تلاش</h3>
+    <p class="p"><strong>در نهایت، به یاد داشته باشید که موفقیت در هر کاری، نیازمند توکل به خدا و تلاش و پشتکار است.</strong> با توکل به خدا و تلاش خود، می‌توانید بهترین نتیجه را در درس پیام‌های آسمانی کسب کنید.</p>
+
+    <h3 class="h">نکات مهم</h3>
+    <ul class="p">
+        <li><strong>برنامه‌ریزی:</strong> برای مطالعه پیام‌های آسمانی، یک برنامه ریزی منظم داشته باشید و به آن پایبند باشید.</li>
+        <li><strong>استمرار:</strong> مطالعه را به طور مداوم و پیوسته انجام دهید و از وقفه‌های طولانی پرهیز کنید.</li>
+        <li><strong>تمرکز:</strong> در هنگام مطالعه، تمرکز داشته باشید و از عوامل مزاحم دوری کنید.</li>
+        <li><strong>خلاصه نویسی:</strong> مطالب مهم هر درس را به صورت خلاصه در دفتری یادداشت کنید.</li>
+        <li><strong>همکاری:</strong> با دوستان خود در مورد درس پیام‌های آسمانی بحث و تبادل نظر کنید.</li>
+    </ul>
+
+    <p class="p">با رعایت این نکات و تلاش و پشتکار خود، مطمئناً می‌توانید در درس پیام‌های آسمانی پایه نهم نمره کامل را کسب کنید و از آن لذت ببرید. موفق باشید!</p>
+</div>
+
+
+    <!-- <div id="chapters" class="section">
+        <h2>فصل‌های پیام‌های آسمانی نهم</h2>
+        <div class="chapter-list">
+            
+            <div class="chapter-item">
+                <h3 class="h">فصل ۱: مخلوط و جداسازی مواد</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱ (PDF)</a>
+            </div>
+
+            
+            <div class="chapter-item">
+                <h3 class="h">فصل ۲: تغییرات شیمیایی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۲ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۲ (PDF)</a>
+            </div>
+
+           
+            <div class="chapter-item">
+                <h3 class="h">فصل ۳: از درون اتم چه خبر؟</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۳ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۳ (PDF)</a>
+            </div>
+
+            
+            <div class="chapter-item">
+                <h3 class="h">فصل ۴: تنظیم عصبی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۴ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۴ (PDF)</a>
+            </div>
+
+            
+            <div class="chapter-item">
+                <h3 class="h">فصل ۵: حس و حرکت</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۵ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۵ (PDF)</a>
+            </div>
+
+            
+            <div class="chapter-item">
+                <h3 class="h">فصل ۶: تنظیم هورمونی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۶ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۶ (PDF)</a>
+            </div>
+
+            
+            <div class="chapter-item">
+                <h3 class="h">فصل ۷: الفبای زیست‌فناوری</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۷ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۷ (PDF)</a>
+            </div>
+
+            
+            <div class="chapter-item">
+                <h3 class="h">فصل ۸: تولید مثل در جانداران</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۸ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۸ (PDF)</a>
+            </div>
+
+            
+            <div class="chapter-item">
+                <h3 class="h">فصل ۹: الکتریسیته</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۹ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۹ (PDF)</a>
+            </div>
+
+            
+            <div class="chapter-item">
+                <h3 class="h">فصل ۱۰: مغناطیس</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱۰ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱۰ (PDF)</a>
+            </div>
+
+           
+            <div class="chapter-item">
+                <h3 class="h">فصل ۱۱: نور و ویژگی‌های آن</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱۱ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱۱ (PDF)</a>
+            </div>
+
+           
+            <div class="chapter-item">
+                <h3 class="h">فصل ۱۲: شکست نور</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱۲ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱۲ (PDF)</a>
+            </div>
+
+        
+            <div class="chapter-item">
+                <h3 class="h">فصل ۱۳: چشم و بینایی</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱۳ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱۳ (PDF)</a>
+            </div>
+
+          
+            <div class="chapter-item">
+                <h3 class="h">فصل ۱۴: مواد و تغییرات آن‌ها</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱۴ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱۴ (PDF)</a>
+            </div>
+
+        
+            <div class="chapter-item">
+                <h3 class="h">فصل ۱۵: انرژی و تبدیل‌های آن</h3>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود جزوه فصل ۱۵ (PDF)</a>
+                <a href="#" class="download-btn"><i class="fas fa-download"></i> دانلود نمونه سوالات فصل ۱۵ (PDF)</a>
+            </div>
+        </div>
+    </div> 
+
+    
+
+    <!-- دکمه بازگشت به بالا -->
+    <button onclick="topFunction()" id="myBtn" title="بازگشت به بالا">↑</button>
+
+    <script>
+        // اسکریپت دکمه بازگشت به بالا
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
